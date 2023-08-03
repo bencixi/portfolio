@@ -1,0 +1,68 @@
+.mainpage {
+    justify-content: center ;
+    align-items: center;
+}
+
+.rolunkIMG img {
+    width: 500px;
+    height: 800px;
+    border-radius: 20px;
+    margin-top: 100px;
+    opacity: 85%;
+
+}
+
+.rolunkText img {
+    height: 150px;
+    width: 150px;
+}
+
+.rolunkText {
+    background-color: rgba(90, 91, 90, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    height: 550px;
+    margin-top: 100px;
+    margin-left: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.rolunk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rolunkBigText {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 20px;    
+}
+
+h2 {
+    margin-top: 13px;
+    font-size: 26px;
+}
+
+.foglaljButton a{
+    font-size: 55px;
+    font-family: arial;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.foglaljButton {
+    margin-top: 50px;
+    background-color: black;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+}
+
+.foglaljButton a:hover{
+    font-size: 61px;
+    transition: 0.5s;
+    padding: 0.5rem 1rem;
+}

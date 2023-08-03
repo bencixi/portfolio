@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+img {
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;
+}
+
+.szemely {
+    border-radius: 20px;
+    height: 500px;
+    margin: 40px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 150px;
+    align-items: center;
+}
+
+.intro {
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -800px;
+    background-color: rgb(27, 27, 27, .5);
+    color: White;
+    border-radius: 20px;
+}
+.intro h1 {
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 35px;
+}
+
+p {
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.szemely:hover {
+    cursor: pointer;
+}
+
+.szemely:hover .intro {
+    height: 220px;
+    bottom: -800px;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.szemely:hover p {
+    visibility: visible;
+    opacity: 1;
+}

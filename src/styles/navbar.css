@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(115, 117, 118);
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #fcfffd;
+    cursor: pointer;
+}
+
+header {
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    padding: 35px;
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navbar Links Color*/
+
+
+.rolunk_button.clicked {
+    color: #15962f;
+}
+.referenciak_button.clicked {
+    color: #15962f;
+}
+
+.csapat_button.clicked {
+    color: #15962f;
+}
+
+.szolgaltatasok_button.clicked {
+    color: #15962f;
+}
+
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color:#025713;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.arajanlat_btn {
+    background-color: #5b5b5b;
+    color: aliceblue;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.arajanlat_btn:hover {
+    scale: 1.10;
+    color: #fff;
+    box-shadow: 1px 1px 30px 5px rgba(99, 99, 99, 0.886)
+}
+
+.arajanlat_btn:active {
+    scale: 0.6;
+}
+
+
+
+/* Drop Menu */
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    height: 0;
+    top: 60px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 300px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .arajanlat_btn {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive */
+
+@media(max-width: 992px) {
+    .navbar .links,
+    .navbar .arajanlat_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media(max-width: 576px) {
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
